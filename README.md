@@ -1,1 +1,1 @@
-# JS_2_JS
+Урок 2. ООП в JavaScript
