@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf)
+}
+
+body {
+    padding: 10px;
+    font-family: cursive;
+    background-repeat: no-repeat;
+    /* width: 50%; */
+    /* height: 1500px; */
+    background-position-x: -300px;
+    /* background-position-y: 500px; */
+    background-size: cover;
+    background-image: url(bg_image.jpeg);
+
+}
+
+.goToBack {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    line-height: 25px;
+}
+
+.wrapper-goToBack:hover {
+    transform: scale(1.2);
+}
+
+.wrapper-goToBack {
+    /*height: 55px;
+    width: 55px;*/
+    text-align: center;
+    transition: transform 2s, -webkit-transform 2s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.task {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #676767;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+.img_logo {
+    width: 20%;
+}
+
+.logo {
+    margin-left: 70px
+}
+
+.logo img {
+    width: 100px;
+    height: 100px
+}
+
+.hamb_container {
+    border-radius: 10px;
+    margin: 50px 50px;
+    padding: 20px;
+    border: #b60010 solid 2px;
+    font-family: Roboto-Regular, sans-serif
+}
+
+#hamburger h3,
+#stuffing h3,
+#topping h3 {
+    font-size: 20px;
+    background-color: #b60010;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px
+}
+
+#all_results {
+    background-color: #ffc836;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    width: 300px
+}
+
+.type_ham,
+.type_stuffing,
+.type_topping {
+    font-size: 15px;
+    background-color: #fff3d3;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px
+}
+
+.type_ham:hover,
+.type_stuffing:hover,
+.type_topping:hover {
+    background-color: #ffc836
+}
+
+.type_ham,
+.type_stuffing,
+.type_topping,
+.delete {
+    cursor: pointer
+}
+
+.full_result {
+    border-radius: 10px;
+    margin: 50px;
+    padding: 20px;
+    border: #b60010 solid 2px;
+    font-family: Roboto-Regular, sans-serif
+}
+
+#res_ham,
+#res_stuffing,
+#res_topping {
+    background-color: #fff3d3;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px
+}
+
+#res_topping {
+    padding: 10px
+}
+
+#sum_cost,
+#sum_calorie {
+    color: #32a759;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px;
+    width: 300px
+}
+
+.bold {
+    font-weight: 600
+}
+
+.clear {
+    clear: both
+}
