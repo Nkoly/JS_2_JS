@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FastFood</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div class="container">
+        <span class="wrapper-goToBack">
+            <a class="goToBack" href="index.html"><img class="img_logo" src="logo1.png">
+                <h1 class="title">OM-NOM-NOM</h1><br>
+                <h2>CatBurger</h2>
+            </a>
+        </span>
+        <div class="task">
+            <h3>Меню:</h3>
+            Маленький CatBurger: (50 рублей, 20 калорий)<br>
+            Большой CatBurger: (100 рублей, 40 калорий)<br>
+            <h3>Начинка к CatBurger:</h3>
+            Сыр (+ 10 рублей, + 20 калорий)<br>
+            Салат (+ 20 рублей, + 5 калорий)<br>
+            Картофель (+ 15 рублей, + 10 калорий)<br>
+            <h3>Дополнительно к CatBurger:</h3>
+            Посыпать приправой (+ 15 рублей, 0 калорий)<br>
+            Полить майонезом (+ 20 рублей, + 5 калорий)
+        </div>
+        <div class="hamb_container">
+            <div id="hamburger">
+                <h3>Выбор гамбургера:</h3>
+                <p id="size_small" class="type_ham">Маленький CatBurger</p>
+                <p id="size_large" class="type_ham">Большой CatBurger</p>
+            </div>
+            <div id="stuffing">
+                <h3>Выбор начинки:</h3>
+                <p id="stuffing_cheese" class="type_stuffing">Сыр</p>
+                <p id="stuffing_salad" class="type_stuffing">Салат</p>
+                <p id="stuffing_potato" class="type_stuffing">Картофель</p>
+            </div>
+            <div id="topping">
+                <h3>Дополнительно:</h3>
+                <p id="topping_spice" class="type_topping">Приправа</p>
+                <p id="topping_mayo" class="type_topping">Майонез</p>
+            </div>
+        </div>
+        <div class="full_result">
+            <div id="result">
+                <h3 id="all_results">Заказ</h3>
+            </div>
+            <div id="sum_cost"></div>
+            <div id="sum_calorie"></div>
+        </div>
+        <div class="clear">
+
+        </div>
+    </div>
+</body>
+
+</html>
