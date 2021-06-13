@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form action="#" id="myform">
+            <fieldset>
+                <legend>Заполни меня</legend>
+                <div>
+                    <label for="name">Введите Ваше имя:</label>
+                    <input type="text" name="name" id="name" placeholder="Ivan">
+                    <span class="error_name">!Вы ввели некорректные значения</span>
+                </div>
+                <div>
+                    <label for="tel">Введите Ваш Телефон:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="+7(000)000-0000">
+                    <span class="error_tel">!Вы ввели некорректные значения</span>
+                </div>
+                <div>
+                    <label for="email">Введите Ваш e-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="mymail@mail.ru">
+                    <span class="error_email">!Вы ввели некорректные значения</span>
+                </div>
+                <div>
+                    <label for="text">Введите тект:</label>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                    <span class="error_text">!Вы ввели некорректные значения</span>
+                </div>
+                <button class="btn" onclick="return false">Отправить</button>
+                <!-- <div>
+                    <input type="submit" class="btn" value="Отправить">
+                </div> -->
+            </fieldset>
+
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
