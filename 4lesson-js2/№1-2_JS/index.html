@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp</title>
+    <style>
+        div,
+        .btn {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--1. Дан большой текст, в котором для оформления прямой речи используются одинарные кавычки. Придумать шаблон, который заменяет одинарные кавычки на двойные.-->
+    <!--2. Улучшить шаблон так, чтобы в конструкциях типа aren't одинарная кавычка не заменялась на двойную.-->
+
+    <div class="text">
+        One: 'Hi Mary.' <br>
+        Two: 'Oh, hi.'<br>
+        One: 'How are you doing?'<br>
+        Two: 'I'm doing alright. How about you?'<br>
+        One: 'Not too bad. The weather is great isn't it?'<br>
+        Two: 'Yes. It's absolutely beautiful today.'<br>
+        One: 'I wish it was like this more frequently.'<br>
+        Two: 'Me too.'<br>
+        One: 'So where are you going now?'<br>
+        Two: 'I'm going to meet a friend of mine at the department store.'<br>
+        One: 'Going to do a little shopping?'<br>
+        Two: 'Yeah, I have to buy some presents for my parents.'<br>
+        One: 'What's the occasion?'<br>
+        Two: 'It's their anniversary.'<br>
+        One: 'That's great. Well, you better get going. You don't want to be late.'<br>
+        Two: 'I'll see you next time.'<br>
+        One: 'Sure. Bye.'<br>
+    </div>
+    <button class="btn">Преобразовать</button>
+
+    <div class="out-1"></div>
+    <div class="out-2"></div>
+
+    <script>
+        function magic() {
+            let text = document.querySelector('.text').textContent;
+            //console.log(text);
+
+            //ищем все знаки ' и заменяем все одинарные кавычки на двойные
+            const regexp = /'/g;
+            console.log(text.replace(regexp, '\"'));
+            document.querySelector('.out-1').textContent = text.replace(regexp, '\"');
+
+            //модифицируем формулу
+            console.log(text.replace(/(\W)(')|(^)(')/g, "$1\""));
+            document.querySelector('.out-2').textContent = text.replace(/(\W)(')|(^)(')/g, "$1\"");
+            // Скобки вокруг любой части регулярного выражения означают что эта часть совпадаемой подстроки будет запомнена. Раз запомнена, подстрока может выбрана для использования
+            // $1  берет первое полученной совпадение из условий поиска и заменяет его
+
+        }
+
+        document.querySelector('.btn').onclick = magic;
+    </script>
+</body>
+
+</html>
