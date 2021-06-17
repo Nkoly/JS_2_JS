@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-shop</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">E-shop</div>
+            <div class="cart">
+                <search-form></search-form>
+                <cart ref="cart"></cart>
+                <!-- <form action="#" class="search-form" @submit.prevent="filter">
+                    <searchform class="search-field" v-model="userSearch"></searchform>
+                    <button class="btn-search" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="btn-cart" type="button" @click="isVisibleCart = !isVisibleCart">Корзина</button>
+                <cart :cart-items="cartItems" :img="imgCart" :visibility="isVisibleCart" @remove="remove"></cart> -->
+            </div>
+        </header>
+        <main>
+            <products ref="products"></products>
+            <!-- <products :products="filtered" :img="imgCatalog" @add-product="addProduct"></products>
+            <error :error="error"></error> -->
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/SearchComponents.js"></script>
+    <script src="js/ErrorComponents.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
