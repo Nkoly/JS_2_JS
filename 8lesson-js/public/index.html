@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+            rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2dbdbbb620.js" crossorigin="anonymous"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+<div id="app">
+    <div class="cart">
+        <filter-el></filter-el>
+        <cart ref="cart"></cart>
+    </div>
+    <header class="main-header d-iflex flex-column clearfix">
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="product-info text-white float-left pr-5">
+                <h1 class="pb-3">Product name</h1>
+                <ul>
+                    <li><i class="fas fa-check pr-3"></i>Put on this page information about your product</li>
+                    <li><i class="fas fa-check pr-3"></i>A detailed description of your product</li>
+                    <li><i class="fas fa-check pr-3"></i>Tell us about the advantages and merits</li>
+                    <li><i class="fas fa-check pr-3"></i>Associate the page with the payment system</li>
+                </ul>
+            </div>
+            <img src="https://www.madeinturkey.com.ua/wp-content/uploads/2020/02/125-fall-in-love.jpg" alt=""
+                 width="450px" class="d-flex pt-1">
+        </div>
+    </header>
+<!--    <main>-->
+<!--        <products ref="products"></products>-->
+<!--        <error ref="error"></error>-->
+<!--    </main>-->
+    <section class="buy d-flex flex-wrap p-5 w-100 flex-column clearfix">
+        <h1 class="pb-3">Buy it now</h1>
+        <error ref="error"></error>
+        <products ref="products"></products>
+    </section>
+    <section class="about-product d-flex flex-wrap justify-content-between clearfix">
+        <div class="about-product-info d-flex flex-wrap pr-5">
+            <h1 class="pb-3">About your product</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos,
+                eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
+            <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos
+                aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis
+                dolor.</p>
+        </div>
+        <video src="video/videoplayback.mp4" controls autoplay muted width="450" height="245"></video>
+    </section>
+    <section class="dignity-product p-5 clearfix">
+        <h1 class="pb-3">Dignity and pluses product</h1>
+        <div class="d-flex flex-wrap">
+            <div class="dignity-product-desc align-items-center">
+                <i class="fas fa-plus float-left"></i>
+                <p>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat,
+                    ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro
+                    totam, dolore minus inventore.</p>
+            </div>
+            <div class="dignity-product-desc align-items-center">
+                <i class="fas fa-plus float-left"></i>
+                <p>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat,
+                    ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro
+                    totam, dolore minus inventore.</p>
+            </div>
+            <div class="dignity-product-desc align-items-center">
+                <i class="fas fa-plus float-left"></i>
+                <p>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat,
+                    ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro
+                    totam, dolore minus inventore.</p>
+            </div>
+            <div class="dignity-product-desc align-items-center">
+                <i class="fas fa-plus float-left"></i>
+                <p>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat,
+                    ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro
+                    totam, dolore minus inventore.</p>
+            </div>
+            <div class="dignity-product-desc align-items-center">
+                <i class="fas fa-plus float-left"></i>
+                <p>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat,
+                    ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro
+                    totam, dolore minus inventore.</p>
+            </div>
+            <div class="dignity-product-desc align-items-center">
+                <i class="fas fa-plus float-left"></i>
+                <p>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat,
+                    ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro
+                    totam, dolore minus inventore.</p>
+            </div>
+        </div>
+    </section>
+    <section class="screenshots p-5 w-100 flex-column align-items-center clearfix">
+        <h1 class="pb-3">Screenshots</h1>
+        <div class="screenshots-wrapper d-flex flex-wrap ">
+            <figure class="d-flex">
+                <img src="img/circles.png" alt="" class="figure-img">
+                <figcaption class="screenshots-desc ml-3">
+                    <h2>The description for the image</h2>
+                    <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem
+                        ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde
+                        perferendis nemo debitis dolor.</p>
+                </figcaption>
+            </figure>
+            <figure class="d-flex">
+                <img src="img/circles.png" alt="" class="figure-img">
+                <figcaption class="screenshots-desc ml-3">
+                    <h2>The description for the image</h2>
+                    <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem
+                        ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde
+                        perferendis nemo debitis dolor.</p>
+                </figcaption>
+            </figure>
+            <figure class="d-flex">
+                <img src="img/circles.png" alt="" class="figure-img">
+                <figcaption class="screenshots-desc ml-3">
+                    <h2>The description for the image</h2>
+                    <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem
+                        ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde
+                        perferendis nemo debitis dolor.</p>
+                </figcaption>
+            </figure>
+            <figure class="d-flex">
+                <img src="img/circles.png" alt="" class="figure-img">
+                <figcaption class="screenshots-desc ml-3">
+                    <h2>The description for the image</h2>
+                    <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem
+                        ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde
+                        perferendis nemo debitis dolor.</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="reviews p-5 clearfix">
+        <h1 class="pb-3">Reviews</h1>
+        <div class="reviews-wrapper d-flex flex-wrap ">
+            <article class="reviews-item d-flex flex-wrap  justify-content-between mb-3">
+                <div class="reviews-photo">
+                </div>
+                <blockquote class="reviews-blockquote pl-3">
+                    <p class="reviews-info"><i>Porro officia cumque sint deleniti nemo facere rem vitae odit
+                        inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit.
+                        Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</i></p>
+                    <cite class="reviews-blockquote-footer">Lourens S.</cite>
+                </blockquote>
+            </article>
+            <article class="reviews-item d-flex flex-wrap justify-content-between align-items-start mb-3">
+                <div class="reviews-photo">
+                </div>
+                <blockquote class="reviews-blockquote pl-3">
+                    <p class="reviews-info"><i>Porro officia cumque sint deleniti nemo facere rem vitae odit
+                        inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit.
+                        Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</i></p>
+                    <cite class="reviews-blockquote-footer">Lourens S.</cite>
+                </blockquote>
+            </article>
+            <article class="reviews-item d-flex flex-wrap  justify-content-between align-items-start mb-3">
+                <div class="reviews-photo">
+                </div>
+                <blockquote class="reviews-blockquote pl-3">
+                    <p class="reviews-info"><i>Porro officia cumque sint deleniti nemo facere rem vitae odit
+                        inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit.
+                        Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</i></p>
+                    <cite class="reviews-blockquote-footer">Lourens S.</cite>
+                </blockquote>
+            </article>
+            <article class="reviews-item d-flex flex-wrap  justify-content-between align-items-start mb-3">
+                <div class="reviews-photo">
+                </div>
+                <blockquote class="reviews-blockquote pl-3">
+                    <p class="reviews-info"><i>Porro officia cumque sint deleniti nemo facere rem vitae odit
+                        inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit.
+                        Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</i></p>
+                    <cite class="reviews-blockquote-footer">Lourens S.</cite>
+                </blockquote>
+            </article>
+        </div>
+    </section>
+    <footer class="p-5 d-iflex clearfix">
+        <h1 class="pb-3 text-white text-center">Contacts</h1>
+        <div class="contact-form d-flex flex-wrap float-left">
+            <form action="#">
+                <fieldset>
+                    <input class="name p-3" placeholder="Your name:"><br>
+                    <input class="email p-3" type="email" placeholder="Your email:"><br>
+                    <textarea name="message" class="message p-3" placeholder="Your message:" cols="30"
+                              rows="10"></textarea>
+                </fieldset>
+                <div class="d-flex justify-content-center">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+        <div class="contact-info d-flex flex-column text-white">
+            <a href="#"></a>
+            <p><i class="fab fa-skype"></i> here_your_login_skype </p>
+            <p><img src="img/icq_icon.png" class="icq" alt="icq"> 279679659</p>
+            <p><i class="fas fa-at"></i> psdhtmlcss@mail.ru</p>
+            <p><i class="fas fa-phone"></i> 80 00 4568 55 55</p>
+        </div>
+        <div class="icons d-flex flex-wrap">
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+            <a href="#"><i class="fab fa-facebook-f icon "></i></a>
+            <a href="#"><i class="fab fa-linkedin-in icon "></i></a>
+            <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+            <a href="#"><i class="fab fa-youtube icon"></i></a>
+        </div>
+    </footer>
+    <div class="bottom-footer">
+        <p>Copyright &copy; 2014 Product name - PSD HTML CSS</p>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/CartComponent.js"></script>
+<script src="js/SearchComponents.js"></script>
+<script src="js/ErrorComponents.js"></script>
+<script src="js/ProductComponent.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
