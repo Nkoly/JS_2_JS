@@ -1,0 +1,30 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 124,
+            "product_name": "Базовый",
+            "price": 100,
+            "price_info": "Оптимальный тарифный план",
+            "imgProduct": "../img/goods/base.png"
+        },
+        {
+            "quantity": 1,
+            "id_product": 123,
+            "product_name": "Бизнес",
+            "price": 300,
+            "price_info": "Все возможности нашего программного обеспечения в одном тарифном плане для самых-самых",
+            "imgProduct": "../img/goods/business.png"
+        },
+        {
+            "quantity": 1,
+            "id_product": 457,
+            "product_name": "Стандарт",
+            "price": 150,
+            "price_info": "Улучшенный тарифный план для продвинутых пользователей",
+            "imgProduct": "../img/goods/standart.png"
+        }
+    ]
+}
